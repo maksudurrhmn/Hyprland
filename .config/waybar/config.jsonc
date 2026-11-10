@@ -1,0 +1,167 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "margin-top": 4,
+  "margin-right": 8,
+  "margin-left": 8,
+  "exclusive": true,
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "tray",
+    "custom/notification",
+    "custom/network",
+    // "pulseaudio#source",
+    "pulseaudio",
+    "cpu",
+    // "temperature",
+    "memory",
+    "disk",
+    "custom/gpu",
+    "custom/power"
+  ],
+  "reload_style_on_change": true,
+
+  "hyprland/window": {
+    "format": "{initialTitle}",
+    "icon": true,
+    "icon-size": 18,
+    "max-length": 50,
+    "separate-outputs": true,
+    "tooltip": false
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "*": 5
+    },
+    "tooltip": false,
+    "all-outputs": false,
+    "sort-by-number": true,
+    "on-scroll-up": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"e-1\" }))'",
+    "on-scroll-down": "hyprctl eval 'hl.dispatch(hl.dsp.focus({ workspace = \"e+1\" }))'",
+    "active-only": false,
+    "show-special": false,
+    "cursor": true
+  },
+  "clock": {
+    "interval": 60,
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%A, %B %d, %Y, %I:%M %p}",
+    "max-length": 50,
+    "tooltip": false,
+    "actions": {
+      "on-click-right": "mode"
+    }
+  },
+  "tray": {
+    "format": "{icon}",
+    "tooltip": true,
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 Muted",
+    "tooltip": true,
+    "tooltip-format": "Volume: {volume}%",
+    "format-icons": {
+      "headphone": "󰋋",
+      "default": ["", "", ""]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+  //   "pulseaudio#source": {
+  //     "format": "󰍬 {volume}%",
+  //     "format-muted": "󰍭 Muted",
+  //     "tooltip": true,
+  //     "tooltip-format": "Microphone: {volume}%",
+  //     "on-click": "pavucontrol",
+  //     "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+  //     "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
+  //     "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%"
+  // },
+  "cpu": {
+    "interval": 2,
+    "format": "  {usage}%",
+    "tooltip": true,
+    "tooltip-format": "CPU Usage: {usage}%"
+  },
+  // "temperature": {
+  //   "interval": 2,
+  //   "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+  //   "format": " {temperatureC}°C",
+  //   "tooltip": true,
+  //   "tooltip-format": "CPU Temperature: {temperatureC}°C"
+  // },
+  "memory": {
+    "interval": 3,
+    "format": "  {used:0.1f}G",
+    "tooltip": true,
+    "tooltip-format": "RAM: {used:0.1f}GB / {total:0.1f}GB"
+  },
+  "disk": {
+    "interval": 30,
+    "unit": "GB",
+    "format": "  {specific_used:0.1f}G",
+    "path": "/",
+    "tooltip": true,
+    "tooltip-format": "Root: {specific_used:0.1f}GB used / {specific_free:0.1f}GB free"
+  },
+  // "custom/gpu": {
+  //   "interval": 2,
+  //   "exec": "~/.config/waybar/scripts/gpu.sh",
+  //   "return-type": "json"
+  // },
+  //   "network": {
+  //     "interval": 2,
+  //     "format-ethernet": "ethernet 󰖩",
+  //     "format-disconnected": "󰖪",
+  //     "tooltip-format-ethernet": "Ethernet: Connected",
+  //     "tooltip-format-disconnected": "Network: Disconnected"
+  // },
+  "custom/network": {
+    "interval": 5,
+    "exec": "~/.config/waybar/scripts/network.sh",
+    "return-type": "json"
+  },
+  // "custom/notification": {
+  //   "exec": "swaync-client --subscribe-waybar",
+  //   "return-type": "json",
+  //   "format": "󰂚",
+  //   "on-click": "swaync-client --toggle-panel",
+  //   "on-click-right": "swaync-client --toggle-dnd",
+  //   "tooltip": true,
+  //   "tooltip-format": "Notifications"
+  // },
+  "custom/notification": {
+    "tooltip": true,
+    "format": "{icon} {0}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": true,
+    "tooltip-format": "Power Menu",
+    "on-click": "wlogout",
+    "on-click-right": "swaync-client --toggle-panel"
+  }
+}

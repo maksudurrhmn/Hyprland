@@ -1,0 +1,23 @@
+* {
+    base: #0e1513;
+    mantle: #171d1b;
+    crust: #090f0e;
+
+    text: #dee4e0;
+    subtext0: #bfc9c4;
+    subtext1: #b1ccc4;
+    overlay0: #89938f;
+
+    surface0: #1b211f;
+    surface1: #252b29;
+    surface2: #303634;
+
+    mauve: #aacbe4;
+    lavender: #84d6c2;
+    blue: #aacbe4;
+    teal: #84d6c2;
+    green: #b1ccc4;
+    yellow: #2a4a5f;
+    peach: #334b45;
+    red: #ffb4ab;
+}

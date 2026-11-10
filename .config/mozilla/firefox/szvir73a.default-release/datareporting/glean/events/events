@@ -1,0 +1,14 @@
+{"timestamp":1638191,"category":"devtools.main","name":"open_tools","extra":{"splitconsole":"false","session_id":"-1","width":"1900","glean_timestamp":"1794340723531","host":"bottom","first_panel":"inspector","entrypoint":"KeyShortcut","shortcut":"accel+shift+C"}}
+{"timestamp":1638191,"category":"devtools.main","name":"enter_inspector","extra":{"session_id":"-1","cold":"true","panel_name":"inspector","width":"1900","host":"bottom","start_state":"initial_panel","glean_timestamp":"1794340723531"}}
+{"timestamp":1639598,"category":"devtools.main","name":"tool_timer_layoutview","extra":{"session_id":"476829","time_open":"1551","glean_timestamp":"1794340724938","os":"Linux 6.18.55-2-cachyos-lts"}}
+{"timestamp":1639615,"category":"devtools.main","name":"tool_timer_ruleview","extra":{"os":"Linux 6.18.55-2-cachyos-lts","session_id":"476829","glean_timestamp":"1794340724955","time_open":"1582"}}
+{"timestamp":1639633,"category":"devtools.main","name":"exit_inspector","extra":{"reason":"toolbox_close","panel_name":"inspector","width":"1900","host":"bottom","next_panel":"none","session_id":"476829","glean_timestamp":"1794340724973"}}
+{"timestamp":1639634,"category":"devtools.main","name":"close_tools","extra":{"width":"1900","session_id":"476829","glean_timestamp":"1794340724973","host":"bottom"}}
+{"timestamp":1944922,"category":"pwmgr","name":"storage_operation_time","extra":{"glean_timestamp":"1794341030261","duration_ms":"1","backend":"json","operation":"count"}}
+{"timestamp":1947315,"category":"pwmgr","name":"storage_operation_time","extra":{"glean_timestamp":"1794341032655","duration_ms":"0","backend":"json","operation":"count"}}
+{"timestamp":1969062,"category":"tab","name":"interaction","extra":{"action":"activate","layout":"horizontal","glean_timestamp":"1794341054402","tab_count":"1","source":"tab_strip"}}
+{"timestamp":1969065,"category":"pwmgr","name":"storage_operation_time","extra":{"operation":"count","backend":"json","duration_ms":"0","glean_timestamp":"1794341054405"}}
+{"timestamp":1973273,"category":"pwmgr","name":"storage_operation_time","extra":{"backend":"json","duration_ms":"0","operation":"count","glean_timestamp":"1794341058612"}}
+{"timestamp":1978514,"category":"pwmgr","name":"storage_operation_time","extra":{"duration_ms":"0","glean_timestamp":"1794341063854","backend":"json","operation":"count"}}
+{"timestamp":1983449,"category":"pwmgr","name":"storage_operation_time","extra":{"duration_ms":"0","backend":"json","glean_timestamp":"1794341068789","operation":"count"}}
+{"timestamp":1988269,"category":"pwmgr","name":"storage_operation_time","extra":{"glean_timestamp":"1794341073609","backend":"json","operation":"count","duration_ms":"0"}}

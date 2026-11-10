@@ -1,0 +1,91 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "cssPriority": "user",
+
+  "control-center-margin-top": 10,
+  "control-center-margin-right": 10,
+  "control-center-margin-bottom": 10,
+  "control-center-width": 380,
+  "control-center-height": 650,
+
+  "notification-window-width": 380,
+  "notification-icon-size": 44,
+
+  "timeout": 6,
+  "timeout-low": 4,
+  "timeout-critical": 0,
+
+  "fit-to-screen": true,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when-available",
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+
+  "script-fail-notify": true,
+  "text-empty": "No Notification",
+  "scripts": {
+    "sound-script": {
+      "exec": "paplay ~/.config/swaync/swaync_notification.ogg",
+      "app-name": ".*"
+    }
+  },
+
+  "widgets": ["label", "buttons-grid", "dnd", "title", "notifications", "mpris"],
+
+  "widget-config": {
+    "label": {
+      "text": "Control Panel"
+    },
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": " 󰎟 "
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "mpris": {
+      "image-size": 64,
+      "image-radius": 10,
+      "show-album-art": "playing",
+      "autohide": true
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰐥 Shutdown",
+          "command": "systemctl poweroff"
+        },
+        {
+          "label": "󰜉 Reboot",
+          "command": "systemctl reboot"
+        },
+        {
+          "label": "󰌾 Lock",
+          "command": "playerctl pause | hyprlock"
+        },
+        {
+          "label": "󰍃 Log out",
+          "command": "hyprctl dispatch 'hl.dsp.exit()'"
+        },
+        {
+          "label": "󰕾 Audio",
+          "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+          "type": "toggle"
+        },
+        {
+          "label": "󰍬 Mic",
+          "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+          "type": "toggle"
+        }
+      ]
+    }
+  }
+}

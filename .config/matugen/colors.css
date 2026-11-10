@@ -1,0 +1,22 @@
+
+:root {
+  --background: #0e1513;
+  --foreground: #dee4e0;
+
+  --primary: #84d6c2;
+  --on-primary: #00382e;
+
+  --surface: #0e1513;
+  --surface-container: #1b211f;
+  --surface-container-low: #171d1b;
+  --surface-container-high: #252b29;
+
+  --secondary: #b1ccc4;
+  --tertiary: #aacbe4;
+
+  --text: #dee4e0;
+  --text-muted: #bfc9c4;
+
+  --border: #3f4946;
+  --error: #ffb4ab;
+}

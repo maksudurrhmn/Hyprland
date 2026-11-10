@@ -1,0 +1,21 @@
+
+@define-color base {{colors.background.dark.hex}};
+@define-color mantle {{colors.surface_container_low.dark.hex}};
+@define-color crust {{colors.surface_container_lowest.dark.hex}};
+
+@define-color text {{colors.on_surface.dark.hex}};
+@define-color subtext0 {{colors.on_surface_variant.dark.hex}};
+@define-color subtext1 {{colors.secondary.dark.hex}};
+@define-color overlay0 {{colors.outline.dark.hex}};
+
+@define-color surface0 {{colors.surface_container.dark.hex}};
+@define-color surface1 {{colors.surface_container_high.dark.hex}};
+
+@define-color mauve {{colors.tertiary.dark.hex}};
+@define-color lavender {{colors.primary.dark.hex}};
+@define-color blue {{colors.tertiary.dark.hex}};
+@define-color teal {{colors.primary.dark.hex}};
+@define-color green {{colors.secondary.dark.hex}};
+@define-color yellow {{colors.tertiary_container.dark.hex}};
+@define-color peach {{colors.secondary_container.dark.hex}};
+@define-color red {{colors.error.dark.hex}};

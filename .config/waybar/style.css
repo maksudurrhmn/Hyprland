@@ -1,0 +1,142 @@
+/* Catppuccin Mocha — waybar style
+ * Clean, minimal, consistent module pills
+ */
+ @import "colors/colors.css";
+
+
+* {
+    all: unset;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: @base;
+    border: 1px solid @lavender;
+    border-radius: 10px;
+}
+
+/* ------ tooltip ------ */
+
+tooltip {
+    background-color: @mantle;
+    border: 1px solid @surface0;
+    border-radius: 8px;
+}
+
+tooltip label { 
+    color: @text;
+}
+
+/* ---------- shared module pill ---------- */
+
+#custom-network,
+#custom-power,
+#clock,
+#pulseaudio,
+#pulseaudio#source,
+#cpu,
+#memory,
+#disk,
+#tray {
+    color: @text;
+    margin: 0px 8px;
+}
+
+
+/* ---------- workspaces ---------- */
+
+#workspaces {
+    padding: 0px 10px;
+    margin: 0px 8px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    margin: 8px 4px;
+    border: 0.5px solid @mauve;
+    border-radius: 4px;
+    color: @subtext1;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.empty {
+    color: @overlay0;
+}
+
+#workspaces button.active {
+    color: #000;
+    font-weight: bold;
+    border-color: @teal;
+    background-color: @teal;
+    padding: 0px 16px;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @crust;
+}
+
+/* ---------- clock ---------- */
+
+#clock {
+    color: @blue;
+    font-weight: bold;
+}
+
+/* ---------- pulseaudio ---------- */
+
+#pulseaudio {
+    color: @teal;
+}
+
+#pulseaudio.muted {
+    color: @overlay0;
+}
+
+/* ---------- cpu / memory / disk ---------- */
+
+#cpu {
+    color: @mauve;
+}
+
+#memory {
+    color: @lavender;
+}
+
+#disk {
+    color: @blue;
+}
+
+/* ---------- tray ---------- */
+
+#tray {
+    padding: 0px 0px;
+}
+
+#tray menu{
+    background-color: @mantle;
+    color: @text;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    background-color: @red;
+    border-radius: 8px;
+}
+
+/* Network */
+
+#custom-network{
+    color: @teal;
+}
+
+#custom-notification{
+    color: @teal;
+}

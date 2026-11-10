@@ -1,0 +1,16 @@
+
+* {
+    bg:       #0e1513;
+    mantle:   #171d1b;
+    text:     #dee4e0;
+    subtext:  #bfc9c4;
+    surface:  #1b211f;
+    mauve:    #84d6c2;
+    overlay:  #89938f;
+
+    background-color: transparent;
+    text-color: @text;
+    margin: 0px;
+    padding: 0px;
+    spacing: 0px;
+}

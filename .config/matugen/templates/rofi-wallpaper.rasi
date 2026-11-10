@@ -1,0 +1,16 @@
+
+* {
+    bg:       {{colors.background.dark.hex}};
+    mantle:   {{colors.surface_container_low.dark.hex}};
+    text:     {{colors.on_surface.dark.hex}};
+    subtext:  {{colors.on_surface_variant.dark.hex}};
+    surface:  {{colors.surface_container.dark.hex}};
+    mauve:    {{colors.primary.dark.hex}};
+    overlay:  {{colors.outline.dark.hex}};
+
+    background-color: transparent;
+    text-color: @text;
+    margin: 0px;
+    padding: 0px;
+    spacing: 0px;
+}

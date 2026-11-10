@@ -1,0 +1,11 @@
+Downloads
+.cache
+.local
+.vscode-oss
+.vscode-oss-shared
+.bashrc
+.bash_profile
+.bash_logout
+.viminfo
+.zshrc
+.gitconfig

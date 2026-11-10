@@ -12,6 +12,7 @@ Downloads
 .bash_history
 .config/VSCodium
 .config/mozilla
+.config/mozilla/firefox
 .config/mimeapps.list
 .config/autostart
 .config/micro

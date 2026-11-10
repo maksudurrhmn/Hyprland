@@ -1,23 +1,23 @@
 * {
-    base: #0e1513;
-    mantle: #171d1b;
-    crust: #090f0e;
+    base: #0f1417;
+    mantle: #181c1f;
+    crust: #0a0f12;
 
-    text: #dee4e0;
-    subtext0: #bfc9c4;
-    subtext1: #b1ccc4;
-    overlay0: #89938f;
+    text: #dfe3e7;
+    subtext0: #c0c7cd;
+    subtext1: #b5c9d7;
+    overlay0: #8b9297;
 
-    surface0: #1b211f;
-    surface1: #252b29;
-    surface2: #303634;
+    surface0: #1c2023;
+    surface1: #262b2e;
+    surface2: #313539;
 
-    mauve: #aacbe4;
-    lavender: #84d6c2;
-    blue: #aacbe4;
-    teal: #84d6c2;
-    green: #b1ccc4;
-    yellow: #2a4a5f;
-    peach: #334b45;
+    mauve: #cac1e9;
+    lavender: #90cef4;
+    blue: #cac1e9;
+    teal: #90cef4;
+    green: #b5c9d7;
+    yellow: #494264;
+    peach: #374955;
     red: #ffb4ab;
 }

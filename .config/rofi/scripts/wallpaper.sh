@@ -33,4 +33,10 @@ if [ -n "$SELECTED" ]; then
 
     # Change lock screen wallpaper
     ln -sf "$WALLPAPER" "$LOCK_WALL"
+
+    # Generate wallpaper-based color scheme
+    matugen image --source-color-index 0 "$WALLPAPER"
+
+    # Reload Hyprland to apply generated colors
+    hyprctl reload
 fi

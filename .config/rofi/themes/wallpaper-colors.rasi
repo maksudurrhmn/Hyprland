@@ -1,12 +1,12 @@
 
 * {
-    bg:       #0e1513;
-    mantle:   #171d1b;
-    text:     #dee4e0;
-    subtext:  #bfc9c4;
-    surface:  #1b211f;
-    mauve:    #84d6c2;
-    overlay:  #89938f;
+    bg:       #0f1417;
+    mantle:   #181c1f;
+    text:     #dfe3e7;
+    subtext:  #c0c7cd;
+    surface:  #1c2023;
+    mauve:    #90cef4;
+    overlay:  #8b9297;
 
     background-color: transparent;
     text-color: @text;

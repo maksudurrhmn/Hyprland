@@ -1,11 +1,7 @@
-------------------
----- MONITORS ----
-------------------
-
--- See https://wiki.hypr.land/Configuring/Basics/Monitors/
+-- Main monitor
 hl.monitor({
-    output   = "HDMI-A-1",
-    mode     = "1920x1080@100",
-    position = "0x0",
-    scale    = "1",
+	output = "HDMI-A-1",
+	mode = "1920x1080@100",
+	position = "0x0",
+	scale = "1",
 })

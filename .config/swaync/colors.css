@@ -1,13 +1,13 @@
 
-@define-color base #0e1513;
-@define-color surface #1b211f;
-@define-color overlay #89938f;
+@define-color base #0f1417;
+@define-color surface #1c2023;
+@define-color overlay #8b9297;
 
-@define-color text #dee4e0;
-@define-color subtext #bfc9c4;
-@define-color subtext1 #0e1513;
+@define-color text #dfe3e7;
+@define-color subtext #c0c7cd;
+@define-color subtext1 #0f1417;
 
-@define-color accent #84d6c2;
-@define-color peach #aacbe4;
-@define-color green #b1ccc4;
+@define-color accent #90cef4;
+@define-color peach #cac1e9;
+@define-color green #b5c9d7;
 @define-color red #ffb4ab;

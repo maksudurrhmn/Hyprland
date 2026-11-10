@@ -26,3 +26,7 @@ post_hook = "swaync-client -rs"
 [templates.hyprlock]
 input_path = "~/.config/matugen/templates/hyprlock.conf"
 output_path = "~/.config/hypr/hyprlock-colors.conf"
+
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/hyprland.lua"
+output_path = "~/.config/hypr/modules/matugen-colors.lua"

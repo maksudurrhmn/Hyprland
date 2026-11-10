@@ -1,34 +1,30 @@
----------------
----- INPUT ----
----------------
-
+-- Keyboard, mouse, and touchpad settings
 hl.config({
-    input = {
-        kb_layout  = "us",
-        kb_variant = "",
-        kb_model   = "",
-        kb_options = "",
-        kb_rules   = "",
+	input = {
+		kb_layout = "us",
+		kb_variant = "",
+		kb_model = "",
+		kb_options = "",
+		kb_rules = "",
 
-        follow_mouse = 1,
+		follow_mouse = 1,
+		sensitivity = 0,
 
-        sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
-
-        touchpad = {
-            natural_scroll = false,
-        },
-    },
+		touchpad = {
+			natural_scroll = false,
+		},
+	},
 })
 
+-- Three-finger horizontal workspace switching
 hl.gesture({
-    fingers = 3,
-    direction = "horizontal",
-    action = "workspace"
+	fingers = 3,
+	direction = "horizontal",
+	action = "workspace",
 })
 
--- Example per-device config
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
+-- Mouse-specific settings
 hl.device({
-    name        = "epic-mouse-v1",
-    sensitivity = -0.5,
+	name = "usb-optical-mouse-",
+	sensitivity = -0.5,
 })

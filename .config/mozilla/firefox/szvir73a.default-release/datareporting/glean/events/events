@@ -12,3 +12,22 @@
 {"timestamp":1978514,"category":"pwmgr","name":"storage_operation_time","extra":{"duration_ms":"0","glean_timestamp":"1794341063854","backend":"json","operation":"count"}}
 {"timestamp":1983449,"category":"pwmgr","name":"storage_operation_time","extra":{"duration_ms":"0","backend":"json","glean_timestamp":"1794341068789","operation":"count"}}
 {"timestamp":1988269,"category":"pwmgr","name":"storage_operation_time","extra":{"glean_timestamp":"1794341073609","backend":"json","operation":"count","duration_ms":"0"}}
+{"timestamp":2277037,"category":"devtools.main","name":"open_tools","extra":{"host":"bottom","splitconsole":"false","glean_timestamp":"1794341362376","first_panel":"inspector","width":"1900","session_id":"-1","shortcut":"accel+shift+C","entrypoint":"KeyShortcut"}}
+{"timestamp":2277037,"category":"devtools.main","name":"enter_inspector","extra":{"session_id":"-1","start_state":"initial_panel","width":"1900","host":"bottom","cold":"true","glean_timestamp":"1794341362377","panel_name":"inspector"}}
+{"timestamp":2278844,"category":"devtools.main","name":"tool_timer_layoutview","extra":{"time_open":"1938","os":"Linux 6.18.55-2-cachyos-lts","glean_timestamp":"1794341364184","session_id":"1115816"}}
+{"timestamp":2278865,"category":"devtools.main","name":"tool_timer_ruleview","extra":{"session_id":"1115816","os":"Linux 6.18.55-2-cachyos-lts","time_open":"1964","glean_timestamp":"1794341364205"}}
+{"timestamp":2278877,"category":"devtools.main","name":"exit_inspector","extra":{"reason":"toolbox_close","panel_name":"inspector","glean_timestamp":"1794341364217","next_panel":"none","host":"bottom","session_id":"1115816","width":"1900"}}
+{"timestamp":2278877,"category":"devtools.main","name":"close_tools","extra":{"width":"1900","glean_timestamp":"1794341364217","session_id":"1115816","host":"bottom"}}
+{"timestamp":2297504,"category":"link.handling","name":"open_from_external_app","extra":{"next_to_active_tab":"false","glean_timestamp":"1794341382844"}}
+{"timestamp":2297518,"category":"pwmgr","name":"storage_operation_time","extra":{"glean_timestamp":"1794341382858","operation":"count","duration_ms":"0","backend":"json"}}
+{"timestamp":2297539,"category":"pwmgr","name":"storage_operation_time","extra":{"backend":"json","duration_ms":"0","glean_timestamp":"1794341382879","operation":"count"}}
+{"timestamp":2298456,"category":"pwmgr","name":"storage_operation_time","extra":{"glean_timestamp":"1794341383795","backend":"json","duration_ms":"0","operation":"count"}}
+{"timestamp":2308771,"category":"pwmgr","name":"storage_operation_time","extra":{"backend":"json","glean_timestamp":"1794341394111","duration_ms":"0","operation":"count"}}
+{"timestamp":2329800,"category":"pwmgr","name":"storage_operation_time","extra":{"operation":"count","duration_ms":"0","backend":"json","glean_timestamp":"1794341415140"}}
+{"timestamp":2333844,"category":"pwmgr","name":"storage_operation_time","extra":{"glean_timestamp":"1794341419184","operation":"count","duration_ms":"0","backend":"json"}}
+{"timestamp":2390533,"category":"tab","name":"interaction","extra":{"glean_timestamp":"1794341475873","action":"close","layout":"horizontal","source":"tab_strip","tab_count":"1"}}
+{"timestamp":2390535,"category":"pwmgr","name":"storage_operation_time","extra":{"backend":"json","glean_timestamp":"1794341475875","duration_ms":"1","operation":"count"}}
+{"timestamp":2393191,"category":"pwmgr","name":"storage_operation_time","extra":{"operation":"count","duration_ms":"0","backend":"json","glean_timestamp":"1794341478531"}}
+{"timestamp":2499929,"category":"pwmgr","name":"storage_operation_time","extra":{"operation":"count","glean_timestamp":"1794341585268","duration_ms":"0","backend":"json"}}
+{"timestamp":2503170,"category":"pwmgr","name":"storage_operation_time","extra":{"operation":"count","backend":"json","glean_timestamp":"1794341588510","duration_ms":"0"}}
+{"timestamp":2504752,"category":"pwmgr","name":"storage_operation_time","extra":{"duration_ms":"0","backend":"json","operation":"count","glean_timestamp":"1794341590092"}}
